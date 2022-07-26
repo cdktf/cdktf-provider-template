@@ -237,7 +237,10 @@ export class DataTemplateCloudinitConfig extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._base64Encode = config.base64Encode;
     this._gzip = config.gzip;
@@ -324,7 +327,7 @@ export class DataTemplateCloudinitConfig extends cdktf.TerraformDataSource {
       base64_encode: cdktf.booleanToTerraform(this._base64Encode),
       gzip: cdktf.booleanToTerraform(this._gzip),
       id: cdktf.stringToTerraform(this._id),
-      part: cdktf.listMapper(dataTemplateCloudinitConfigPartToTerraform)(this._part.internalValue),
+      part: cdktf.listMapper(dataTemplateCloudinitConfigPartToTerraform, true)(this._part.internalValue),
     };
   }
 }
