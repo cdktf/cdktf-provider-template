@@ -2,27 +2,27 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### CloudinitConfig <a name="CloudinitConfig" id="@cdktf/provider-template.CloudinitConfig"></a>
+### CloudinitConfig <a name="CloudinitConfig" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config template_cloudinit_config}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.CloudinitConfig.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer"></a>
 
 ```typescript
-import { CloudinitConfig } from '@cdktf/provider-template'
+import { cloudinitConfig } from '@cdktf/provider-template'
 
-new CloudinitConfig(scope: Construct, id: string, config: CloudinitConfigConfig)
+new cloudinitConfig.CloudinitConfig(scope: Construct, id: string, config: CloudinitConfigConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-template.CloudinitConfigConfig">CloudinitConfigConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer.parameter.config">config</a></code> | <code>@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.CloudinitConfig.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.CloudinitConfig.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-template.CloudinitConfig.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-template.CloudinitConfigConfig">CloudinitConfigConfig</a>
+- *Type:* @cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig
 
 ---
 
@@ -50,30 +50,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.putPart">putPart</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.resetBase64Encode">resetBase64Encode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.resetGzip">resetGzip</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.putPart">putPart</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetBase64Encode">resetBase64Encode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetGzip">resetGzip</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetId">resetId</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.CloudinitConfig.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.toString"></a>
 
 ```typescript
 public toString(): string
@@ -81,25 +81,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.CloudinitConfig.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.CloudinitConfig.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.CloudinitConfig.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.CloudinitConfig.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -107,7 +107,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.CloudinitConfig.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -115,7 +115,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.CloudinitConfig.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -123,13 +123,13 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.CloudinitConfig.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.CloudinitConfig.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -137,151 +137,151 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.CloudinitConfig.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.CloudinitConfig.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.CloudinitConfig.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.CloudinitConfig.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.CloudinitConfig.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.CloudinitConfig.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.CloudinitConfig.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.CloudinitConfig.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.CloudinitConfig.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.CloudinitConfig.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `putPart` <a name="putPart" id="@cdktf/provider-template.CloudinitConfig.putPart"></a>
+##### `putPart` <a name="putPart" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.putPart"></a>
 
 ```typescript
 public putPart(value: IResolvable | CloudinitConfigPart[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.CloudinitConfig.putPart.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.putPart.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]
 
 ---
 
-##### `resetBase64Encode` <a name="resetBase64Encode" id="@cdktf/provider-template.CloudinitConfig.resetBase64Encode"></a>
+##### `resetBase64Encode` <a name="resetBase64Encode" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetBase64Encode"></a>
 
 ```typescript
 public resetBase64Encode(): void
 ```
 
-##### `resetGzip` <a name="resetGzip" id="@cdktf/provider-template.CloudinitConfig.resetGzip"></a>
+##### `resetGzip` <a name="resetGzip" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetGzip"></a>
 
 ```typescript
 public resetGzip(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-template.CloudinitConfig.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.resetId"></a>
 
 ```typescript
 public resetId(): void
@@ -291,16 +291,16 @@ public resetId(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.CloudinitConfig.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isConstruct"></a>
 
 ```typescript
-import { CloudinitConfig } from '@cdktf/provider-template'
+import { cloudinitConfig } from '@cdktf/provider-template'
 
-CloudinitConfig.isConstruct(x: any)
+cloudinitConfig.CloudinitConfig.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
@@ -319,7 +319,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.CloudinitConfig.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -331,33 +331,33 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.part">part</a></code> | <code><a href="#@cdktf/provider-template.CloudinitConfigPartList">CloudinitConfigPartList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.base64EncodeInput">base64EncodeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.gzipInput">gzipInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.partInput">partInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.part">part</a></code> | <code>@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.base64EncodeInput">base64EncodeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.gzipInput">gzipInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.partInput">partInput</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.CloudinitConfig.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -369,7 +369,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.CloudinitConfig.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -379,7 +379,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.CloudinitConfig.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -389,7 +389,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.CloudinitConfig.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -399,7 +399,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.CloudinitConfig.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -409,7 +409,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.CloudinitConfig.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -419,7 +419,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.CloudinitConfig.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -429,7 +429,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.CloudinitConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -439,7 +439,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.CloudinitConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -449,7 +449,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.CloudinitConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -459,7 +459,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.CloudinitConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -469,7 +469,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.CloudinitConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -479,7 +479,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.CloudinitConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -489,7 +489,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.CloudinitConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -499,17 +499,17 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.CloudinitConfig.property.part"></a>
+##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.part"></a>
 
 ```typescript
 public readonly part: CloudinitConfigPartList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-template.CloudinitConfigPartList">CloudinitConfigPartList</a>
+- *Type:* @cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList
 
 ---
 
-##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.CloudinitConfig.property.rendered"></a>
+##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.rendered"></a>
 
 ```typescript
 public readonly rendered: string;
@@ -519,7 +519,7 @@ public readonly rendered: string;
 
 ---
 
-##### `base64EncodeInput`<sup>Optional</sup> <a name="base64EncodeInput" id="@cdktf/provider-template.CloudinitConfig.property.base64EncodeInput"></a>
+##### `base64EncodeInput`<sup>Optional</sup> <a name="base64EncodeInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.base64EncodeInput"></a>
 
 ```typescript
 public readonly base64EncodeInput: boolean | IResolvable;
@@ -529,7 +529,7 @@ public readonly base64EncodeInput: boolean | IResolvable;
 
 ---
 
-##### `gzipInput`<sup>Optional</sup> <a name="gzipInput" id="@cdktf/provider-template.CloudinitConfig.property.gzipInput"></a>
+##### `gzipInput`<sup>Optional</sup> <a name="gzipInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.gzipInput"></a>
 
 ```typescript
 public readonly gzipInput: boolean | IResolvable;
@@ -539,7 +539,7 @@ public readonly gzipInput: boolean | IResolvable;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.CloudinitConfig.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -549,17 +549,17 @@ public readonly idInput: string;
 
 ---
 
-##### `partInput`<sup>Optional</sup> <a name="partInput" id="@cdktf/provider-template.CloudinitConfig.property.partInput"></a>
+##### `partInput`<sup>Optional</sup> <a name="partInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.partInput"></a>
 
 ```typescript
 public readonly partInput: IResolvable | CloudinitConfigPart[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]
 
 ---
 
-##### `base64Encode`<sup>Required</sup> <a name="base64Encode" id="@cdktf/provider-template.CloudinitConfig.property.base64Encode"></a>
+##### `base64Encode`<sup>Required</sup> <a name="base64Encode" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.base64Encode"></a>
 
 ```typescript
 public readonly base64Encode: boolean | IResolvable;
@@ -569,7 +569,7 @@ public readonly base64Encode: boolean | IResolvable;
 
 ---
 
-##### `gzip`<sup>Required</sup> <a name="gzip" id="@cdktf/provider-template.CloudinitConfig.property.gzip"></a>
+##### `gzip`<sup>Required</sup> <a name="gzip" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.gzip"></a>
 
 ```typescript
 public readonly gzip: boolean | IResolvable;
@@ -579,7 +579,7 @@ public readonly gzip: boolean | IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.CloudinitConfig.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -593,11 +593,11 @@ public readonly id: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfig.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.CloudinitConfig.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -607,27 +607,27 @@ public readonly tfResourceType: string;
 
 ---
 
-### DataTemplateCloudinitConfig <a name="DataTemplateCloudinitConfig" id="@cdktf/provider-template.DataTemplateCloudinitConfig"></a>
+### DataTemplateCloudinitConfig <a name="DataTemplateCloudinitConfig" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config template_cloudinit_config}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer"></a>
 
 ```typescript
-import { DataTemplateCloudinitConfig } from '@cdktf/provider-template'
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
 
-new DataTemplateCloudinitConfig(scope: Construct, id: string, config: DataTemplateCloudinitConfigConfig)
+new dataTemplateCloudinitConfig.DataTemplateCloudinitConfig(scope: Construct, id: string, config: DataTemplateCloudinitConfigConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig">DataTemplateCloudinitConfigConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer.parameter.config">config</a></code> | <code>@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -635,7 +635,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -645,9 +645,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-template.DataTemplateCloudinitConfig.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig">DataTemplateCloudinitConfigConfig</a>
+- *Type:* @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig
 
 ---
 
@@ -655,30 +655,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.putPart">putPart</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.resetBase64Encode">resetBase64Encode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.resetGzip">resetGzip</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.putPart">putPart</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetBase64Encode">resetBase64Encode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetGzip">resetGzip</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetId">resetId</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.DataTemplateCloudinitConfig.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.toString"></a>
 
 ```typescript
 public toString(): string
@@ -686,25 +686,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.DataTemplateCloudinitConfig.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.DataTemplateCloudinitConfig.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.DataTemplateCloudinitConfig.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.DataTemplateCloudinitConfig.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -712,7 +712,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.DataTemplateCloudinitConfig.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -720,7 +720,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.DataTemplateCloudinitConfig.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -728,13 +728,13 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.DataTemplateCloudinitConfig.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.DataTemplateCloudinitConfig.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -742,151 +742,151 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `putPart` <a name="putPart" id="@cdktf/provider-template.DataTemplateCloudinitConfig.putPart"></a>
+##### `putPart` <a name="putPart" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.putPart"></a>
 
 ```typescript
 public putPart(value: IResolvable | DataTemplateCloudinitConfigPart[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.DataTemplateCloudinitConfig.putPart.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.putPart.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]
 
 ---
 
-##### `resetBase64Encode` <a name="resetBase64Encode" id="@cdktf/provider-template.DataTemplateCloudinitConfig.resetBase64Encode"></a>
+##### `resetBase64Encode` <a name="resetBase64Encode" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetBase64Encode"></a>
 
 ```typescript
 public resetBase64Encode(): void
 ```
 
-##### `resetGzip` <a name="resetGzip" id="@cdktf/provider-template.DataTemplateCloudinitConfig.resetGzip"></a>
+##### `resetGzip` <a name="resetGzip" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetGzip"></a>
 
 ```typescript
 public resetGzip(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-template.DataTemplateCloudinitConfig.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.resetId"></a>
 
 ```typescript
 public resetId(): void
@@ -896,16 +896,16 @@ public resetId(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.DataTemplateCloudinitConfig.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct"></a>
 
 ```typescript
-import { DataTemplateCloudinitConfig } from '@cdktf/provider-template'
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
 
-DataTemplateCloudinitConfig.isConstruct(x: any)
+dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
@@ -924,7 +924,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.DataTemplateCloudinitConfig.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -936,31 +936,31 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.part">part</a></code> | <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList">DataTemplateCloudinitConfigPartList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.base64EncodeInput">base64EncodeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.gzipInput">gzipInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.partInput">partInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.part">part</a></code> | <code>@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.base64EncodeInput">base64EncodeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.gzipInput">gzipInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.partInput">partInput</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -972,7 +972,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -982,7 +982,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -992,7 +992,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -1002,7 +1002,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -1012,7 +1012,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -1022,7 +1022,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -1032,7 +1032,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -1042,7 +1042,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -1052,7 +1052,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1062,7 +1062,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1072,7 +1072,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1082,17 +1082,17 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.part"></a>
+##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.part"></a>
 
 ```typescript
 public readonly part: DataTemplateCloudinitConfigPartList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList">DataTemplateCloudinitConfigPartList</a>
+- *Type:* @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList
 
 ---
 
-##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.rendered"></a>
+##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.rendered"></a>
 
 ```typescript
 public readonly rendered: string;
@@ -1102,7 +1102,7 @@ public readonly rendered: string;
 
 ---
 
-##### `base64EncodeInput`<sup>Optional</sup> <a name="base64EncodeInput" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.base64EncodeInput"></a>
+##### `base64EncodeInput`<sup>Optional</sup> <a name="base64EncodeInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.base64EncodeInput"></a>
 
 ```typescript
 public readonly base64EncodeInput: boolean | IResolvable;
@@ -1112,7 +1112,7 @@ public readonly base64EncodeInput: boolean | IResolvable;
 
 ---
 
-##### `gzipInput`<sup>Optional</sup> <a name="gzipInput" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.gzipInput"></a>
+##### `gzipInput`<sup>Optional</sup> <a name="gzipInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.gzipInput"></a>
 
 ```typescript
 public readonly gzipInput: boolean | IResolvable;
@@ -1122,7 +1122,7 @@ public readonly gzipInput: boolean | IResolvable;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -1132,17 +1132,17 @@ public readonly idInput: string;
 
 ---
 
-##### `partInput`<sup>Optional</sup> <a name="partInput" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.partInput"></a>
+##### `partInput`<sup>Optional</sup> <a name="partInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.partInput"></a>
 
 ```typescript
 public readonly partInput: IResolvable | DataTemplateCloudinitConfigPart[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]
 
 ---
 
-##### `base64Encode`<sup>Required</sup> <a name="base64Encode" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.base64Encode"></a>
+##### `base64Encode`<sup>Required</sup> <a name="base64Encode" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.base64Encode"></a>
 
 ```typescript
 public readonly base64Encode: boolean | IResolvable;
@@ -1152,7 +1152,7 @@ public readonly base64Encode: boolean | IResolvable;
 
 ---
 
-##### `gzip`<sup>Required</sup> <a name="gzip" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.gzip"></a>
+##### `gzip`<sup>Required</sup> <a name="gzip" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.gzip"></a>
 
 ```typescript
 public readonly gzip: boolean | IResolvable;
@@ -1162,7 +1162,7 @@ public readonly gzip: boolean | IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1176,11 +1176,11 @@ public readonly id: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfig.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.DataTemplateCloudinitConfig.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1190,27 +1190,27 @@ public readonly tfResourceType: string;
 
 ---
 
-### DataTemplateFile <a name="DataTemplateFile" id="@cdktf/provider-template.DataTemplateFile"></a>
+### DataTemplateFile <a name="DataTemplateFile" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/template/d/file template_file}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.DataTemplateFile.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer"></a>
 
 ```typescript
-import { DataTemplateFile } from '@cdktf/provider-template'
+import { dataTemplateFile } from '@cdktf/provider-template'
 
-new DataTemplateFile(scope: Construct, id: string, config?: DataTemplateFileConfig)
+new dataTemplateFile.DataTemplateFile(scope: Construct, id: string, config?: DataTemplateFileConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-template.DataTemplateFileConfig">DataTemplateFileConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer.parameter.config">config</a></code> | <code>@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.DataTemplateFile.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1218,7 +1218,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.DataTemplateFile.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -1228,9 +1228,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-template.DataTemplateFile.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-template.DataTemplateFileConfig">DataTemplateFileConfig</a>
+- *Type:* @cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig
 
 ---
 
@@ -1238,30 +1238,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.resetFilename">resetFilename</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.resetTemplate">resetTemplate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.resetVars">resetVars</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetFilename">resetFilename</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetTemplate">resetTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetVars">resetVars</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.DataTemplateFile.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1269,25 +1269,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.DataTemplateFile.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.DataTemplateFile.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.DataTemplateFile.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.DataTemplateFile.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -1295,7 +1295,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.DataTemplateFile.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -1303,7 +1303,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.DataTemplateFile.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -1311,13 +1311,13 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.DataTemplateFile.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.DataTemplateFile.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -1325,145 +1325,145 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.DataTemplateFile.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.DataTemplateFile.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.DataTemplateFile.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.DataTemplateFile.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.DataTemplateFile.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.DataTemplateFile.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.DataTemplateFile.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.DataTemplateFile.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.DataTemplateFile.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.DataTemplateFile.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateFile.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.DataTemplateFile.resetFilename"></a>
+##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetFilename"></a>
 
 ```typescript
 public resetFilename(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-template.DataTemplateFile.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetTemplate` <a name="resetTemplate" id="@cdktf/provider-template.DataTemplateFile.resetTemplate"></a>
+##### `resetTemplate` <a name="resetTemplate" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetTemplate"></a>
 
 ```typescript
 public resetTemplate(): void
 ```
 
-##### `resetVars` <a name="resetVars" id="@cdktf/provider-template.DataTemplateFile.resetVars"></a>
+##### `resetVars` <a name="resetVars" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetVars"></a>
 
 ```typescript
 public resetVars(): void
@@ -1473,16 +1473,16 @@ public resetVars(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.DataTemplateFile.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isConstruct"></a>
 
 ```typescript
-import { DataTemplateFile } from '@cdktf/provider-template'
+import { dataTemplateFile } from '@cdktf/provider-template'
 
-DataTemplateFile.isConstruct(x: any)
+dataTemplateFile.DataTemplateFile.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
@@ -1501,7 +1501,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.DataTemplateFile.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -1513,31 +1513,31 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.templateInput">templateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.filename">filename</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.template">template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.templateInput">templateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.filename">filename</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.template">template</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.DataTemplateFile.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -1549,7 +1549,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.DataTemplateFile.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -1559,7 +1559,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.DataTemplateFile.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1569,7 +1569,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.DataTemplateFile.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -1579,7 +1579,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.DataTemplateFile.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -1589,7 +1589,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.DataTemplateFile.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -1599,7 +1599,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.DataTemplateFile.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -1609,7 +1609,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.DataTemplateFile.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -1619,7 +1619,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.DataTemplateFile.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -1629,7 +1629,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.DataTemplateFile.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1639,7 +1639,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.DataTemplateFile.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1649,7 +1649,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.DataTemplateFile.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1659,7 +1659,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.DataTemplateFile.property.rendered"></a>
+##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.rendered"></a>
 
 ```typescript
 public readonly rendered: string;
@@ -1669,7 +1669,7 @@ public readonly rendered: string;
 
 ---
 
-##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.DataTemplateFile.property.filenameInput"></a>
+##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.filenameInput"></a>
 
 ```typescript
 public readonly filenameInput: string;
@@ -1679,7 +1679,7 @@ public readonly filenameInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.DataTemplateFile.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -1689,7 +1689,7 @@ public readonly idInput: string;
 
 ---
 
-##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-template.DataTemplateFile.property.templateInput"></a>
+##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.templateInput"></a>
 
 ```typescript
 public readonly templateInput: string;
@@ -1699,7 +1699,7 @@ public readonly templateInput: string;
 
 ---
 
-##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-template.DataTemplateFile.property.varsInput"></a>
+##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.varsInput"></a>
 
 ```typescript
 public readonly varsInput: {[ key: string ]: string};
@@ -1709,7 +1709,7 @@ public readonly varsInput: {[ key: string ]: string};
 
 ---
 
-##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.DataTemplateFile.property.filename"></a>
+##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -1719,7 +1719,7 @@ public readonly filename: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.DataTemplateFile.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1729,7 +1729,7 @@ public readonly id: string;
 
 ---
 
-##### `template`<sup>Required</sup> <a name="template" id="@cdktf/provider-template.DataTemplateFile.property.template"></a>
+##### `template`<sup>Required</sup> <a name="template" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.template"></a>
 
 ```typescript
 public readonly template: string;
@@ -1739,7 +1739,7 @@ public readonly template: string;
 
 ---
 
-##### `vars`<sup>Required</sup> <a name="vars" id="@cdktf/provider-template.DataTemplateFile.property.vars"></a>
+##### `vars`<sup>Required</sup> <a name="vars" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.vars"></a>
 
 ```typescript
 public readonly vars: {[ key: string ]: string};
@@ -1753,11 +1753,11 @@ public readonly vars: {[ key: string ]: string};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateFile.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.DataTemplateFile.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1767,27 +1767,27 @@ public readonly tfResourceType: string;
 
 ---
 
-### Dir <a name="Dir" id="@cdktf/provider-template.Dir"></a>
+### Dir <a name="Dir" id="@cdktf/provider-template.dir.Dir"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/template/r/dir template_dir}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.Dir.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.dir.Dir.Initializer"></a>
 
 ```typescript
-import { Dir } from '@cdktf/provider-template'
+import { dir } from '@cdktf/provider-template'
 
-new Dir(scope: Construct, id: string, config: DirConfig)
+new dir.Dir(scope: Construct, id: string, config: DirConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.Dir.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-template.Dir.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-template.Dir.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-template.DirConfig">DirConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.Initializer.parameter.config">config</a></code> | <code>@cdktf/provider-template.dir.DirConfig</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.Dir.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.dir.Dir.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1795,7 +1795,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.Dir.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.dir.Dir.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -1805,9 +1805,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-template.Dir.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-template.dir.Dir.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-template.DirConfig">DirConfig</a>
+- *Type:* @cdktf/provider-template.dir.DirConfig
 
 ---
 
@@ -1815,28 +1815,28 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.Dir.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-template.Dir.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-template.Dir.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-template.Dir.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-template.Dir.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.resetVars">resetVars</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.resetVars">resetVars</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.Dir.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.dir.Dir.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1844,25 +1844,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.Dir.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.dir.Dir.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.Dir.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.dir.Dir.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.Dir.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.dir.Dir.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.Dir.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.dir.Dir.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -1870,7 +1870,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.Dir.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.dir.Dir.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -1878,7 +1878,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.Dir.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.dir.Dir.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -1886,13 +1886,13 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.Dir.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.dir.Dir.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.Dir.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.dir.Dir.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -1900,133 +1900,133 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.Dir.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.dir.Dir.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.Dir.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.dir.Dir.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.Dir.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.dir.Dir.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.Dir.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.dir.Dir.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.Dir.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.dir.Dir.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.Dir.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.dir.Dir.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.Dir.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.dir.Dir.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.Dir.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.dir.Dir.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.Dir.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.dir.Dir.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.Dir.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.dir.Dir.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.Dir.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dir.Dir.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-template.Dir.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktf/provider-template.dir.Dir.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetVars` <a name="resetVars" id="@cdktf/provider-template.Dir.resetVars"></a>
+##### `resetVars` <a name="resetVars" id="@cdktf/provider-template.dir.Dir.resetVars"></a>
 
 ```typescript
 public resetVars(): void
@@ -2036,16 +2036,16 @@ public resetVars(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.Dir.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.Dir.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.dir.Dir.isConstruct"></a>
 
 ```typescript
-import { Dir } from '@cdktf/provider-template'
+import { dir } from '@cdktf/provider-template'
 
-Dir.isConstruct(x: any)
+dir.Dir.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
@@ -2064,7 +2064,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.Dir.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dir.Dir.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -2076,32 +2076,32 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.Dir.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-template.Dir.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.destinationDirInput">destinationDirInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.sourceDirInput">sourceDirInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.destinationDir">destinationDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.Dir.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.destinationDirInput">destinationDirInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.sourceDirInput">sourceDirInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.destinationDir">destinationDir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.sourceDir">sourceDir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.Dir.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.dir.Dir.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2113,7 +2113,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.Dir.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.dir.Dir.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -2123,7 +2123,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.Dir.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.dir.Dir.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2133,7 +2133,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.Dir.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.dir.Dir.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -2143,7 +2143,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.Dir.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.dir.Dir.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -2153,7 +2153,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.Dir.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.dir.Dir.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -2163,7 +2163,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.Dir.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.dir.Dir.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -2173,7 +2173,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.Dir.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.dir.Dir.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -2183,7 +2183,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.Dir.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.dir.Dir.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -2193,7 +2193,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.Dir.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.dir.Dir.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -2203,7 +2203,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.Dir.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.dir.Dir.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -2213,7 +2213,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.Dir.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.dir.Dir.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -2223,7 +2223,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.Dir.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dir.Dir.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -2233,7 +2233,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.Dir.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.dir.Dir.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -2243,7 +2243,7 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `destinationDirInput`<sup>Optional</sup> <a name="destinationDirInput" id="@cdktf/provider-template.Dir.property.destinationDirInput"></a>
+##### `destinationDirInput`<sup>Optional</sup> <a name="destinationDirInput" id="@cdktf/provider-template.dir.Dir.property.destinationDirInput"></a>
 
 ```typescript
 public readonly destinationDirInput: string;
@@ -2253,7 +2253,7 @@ public readonly destinationDirInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.Dir.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.dir.Dir.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -2263,7 +2263,7 @@ public readonly idInput: string;
 
 ---
 
-##### `sourceDirInput`<sup>Optional</sup> <a name="sourceDirInput" id="@cdktf/provider-template.Dir.property.sourceDirInput"></a>
+##### `sourceDirInput`<sup>Optional</sup> <a name="sourceDirInput" id="@cdktf/provider-template.dir.Dir.property.sourceDirInput"></a>
 
 ```typescript
 public readonly sourceDirInput: string;
@@ -2273,7 +2273,7 @@ public readonly sourceDirInput: string;
 
 ---
 
-##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-template.Dir.property.varsInput"></a>
+##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-template.dir.Dir.property.varsInput"></a>
 
 ```typescript
 public readonly varsInput: {[ key: string ]: string};
@@ -2283,7 +2283,7 @@ public readonly varsInput: {[ key: string ]: string};
 
 ---
 
-##### `destinationDir`<sup>Required</sup> <a name="destinationDir" id="@cdktf/provider-template.Dir.property.destinationDir"></a>
+##### `destinationDir`<sup>Required</sup> <a name="destinationDir" id="@cdktf/provider-template.dir.Dir.property.destinationDir"></a>
 
 ```typescript
 public readonly destinationDir: string;
@@ -2293,7 +2293,7 @@ public readonly destinationDir: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.Dir.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.dir.Dir.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -2303,7 +2303,7 @@ public readonly id: string;
 
 ---
 
-##### `sourceDir`<sup>Required</sup> <a name="sourceDir" id="@cdktf/provider-template.Dir.property.sourceDir"></a>
+##### `sourceDir`<sup>Required</sup> <a name="sourceDir" id="@cdktf/provider-template.dir.Dir.property.sourceDir"></a>
 
 ```typescript
 public readonly sourceDir: string;
@@ -2313,7 +2313,7 @@ public readonly sourceDir: string;
 
 ---
 
-##### `vars`<sup>Required</sup> <a name="vars" id="@cdktf/provider-template.Dir.property.vars"></a>
+##### `vars`<sup>Required</sup> <a name="vars" id="@cdktf/provider-template.dir.Dir.property.vars"></a>
 
 ```typescript
 public readonly vars: {[ key: string ]: string};
@@ -2327,11 +2327,11 @@ public readonly vars: {[ key: string ]: string};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.Dir.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.Dir.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.dir.Dir.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -2341,27 +2341,27 @@ public readonly tfResourceType: string;
 
 ---
 
-### File <a name="File" id="@cdktf/provider-template.File"></a>
+### File <a name="File" id="@cdktf/provider-template.file.File"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/template/r/file template_file}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.File.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.file.File.Initializer"></a>
 
 ```typescript
-import { File } from '@cdktf/provider-template'
+import { file } from '@cdktf/provider-template'
 
-new File(scope: Construct, id: string, config?: FileConfig)
+new file.File(scope: Construct, id: string, config?: FileConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.File.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-template.File.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-template.File.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-template.FileConfig">FileConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-template.file.File.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-template.file.File.Initializer.parameter.config">config</a></code> | <code>@cdktf/provider-template.file.FileConfig</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.File.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.file.File.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -2369,7 +2369,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.File.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.file.File.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -2379,9 +2379,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-template.File.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-template.file.File.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-template.FileConfig">FileConfig</a>
+- *Type:* @cdktf/provider-template.file.FileConfig
 
 ---
 
@@ -2389,30 +2389,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.File.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-template.File.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-template.File.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-template.File.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-template.File.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.resetFilename">resetFilename</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.resetTemplate">resetTemplate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.resetVars">resetVars</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-template.file.File.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-template.file.File.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.file.File.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-template.file.File.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.resetFilename">resetFilename</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.resetTemplate">resetTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.resetVars">resetVars</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.File.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.file.File.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2420,25 +2420,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.File.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.file.File.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.File.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.file.File.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.File.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.file.File.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.File.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.file.File.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -2446,7 +2446,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.File.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.file.File.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -2454,7 +2454,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.File.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.file.File.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -2462,13 +2462,13 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.File.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.file.File.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.File.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.file.File.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -2476,145 +2476,145 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.File.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.file.File.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.File.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.file.File.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.File.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.file.File.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.File.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.file.File.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.File.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.file.File.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.File.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.file.File.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.File.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.file.File.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.File.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.file.File.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.File.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.file.File.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.File.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.file.File.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.File.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.file.File.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.File.resetFilename"></a>
+##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.file.File.resetFilename"></a>
 
 ```typescript
 public resetFilename(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-template.File.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktf/provider-template.file.File.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetTemplate` <a name="resetTemplate" id="@cdktf/provider-template.File.resetTemplate"></a>
+##### `resetTemplate` <a name="resetTemplate" id="@cdktf/provider-template.file.File.resetTemplate"></a>
 
 ```typescript
 public resetTemplate(): void
 ```
 
-##### `resetVars` <a name="resetVars" id="@cdktf/provider-template.File.resetVars"></a>
+##### `resetVars` <a name="resetVars" id="@cdktf/provider-template.file.File.resetVars"></a>
 
 ```typescript
 public resetVars(): void
@@ -2624,16 +2624,16 @@ public resetVars(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.File.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.file.File.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.File.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.file.File.isConstruct"></a>
 
 ```typescript
-import { File } from '@cdktf/provider-template'
+import { file } from '@cdktf/provider-template'
 
-File.isConstruct(x: any)
+file.File.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
@@ -2652,7 +2652,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.File.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.file.File.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -2664,33 +2664,33 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.File.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-template.File.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.templateInput">templateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.filename">filename</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.template">template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.File.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-template.file.File.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.rendered">rendered</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.templateInput">templateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.filename">filename</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.template">template</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.File.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.file.File.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -2702,7 +2702,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.File.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.file.File.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -2712,7 +2712,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.File.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.file.File.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2722,7 +2722,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.File.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.file.File.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -2732,7 +2732,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.File.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-template.file.File.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -2742,7 +2742,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.File.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.file.File.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -2752,7 +2752,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.File.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.file.File.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -2762,7 +2762,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.File.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.file.File.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -2772,7 +2772,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.File.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.file.File.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -2782,7 +2782,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.File.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.file.File.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -2792,7 +2792,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.File.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.file.File.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -2802,7 +2802,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.File.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.file.File.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -2812,7 +2812,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.File.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.file.File.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -2822,7 +2822,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.File.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.file.File.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -2832,7 +2832,7 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.File.property.rendered"></a>
+##### `rendered`<sup>Required</sup> <a name="rendered" id="@cdktf/provider-template.file.File.property.rendered"></a>
 
 ```typescript
 public readonly rendered: string;
@@ -2842,7 +2842,7 @@ public readonly rendered: string;
 
 ---
 
-##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.File.property.filenameInput"></a>
+##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.file.File.property.filenameInput"></a>
 
 ```typescript
 public readonly filenameInput: string;
@@ -2852,7 +2852,7 @@ public readonly filenameInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.File.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-template.file.File.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -2862,7 +2862,7 @@ public readonly idInput: string;
 
 ---
 
-##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-template.File.property.templateInput"></a>
+##### `templateInput`<sup>Optional</sup> <a name="templateInput" id="@cdktf/provider-template.file.File.property.templateInput"></a>
 
 ```typescript
 public readonly templateInput: string;
@@ -2872,7 +2872,7 @@ public readonly templateInput: string;
 
 ---
 
-##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-template.File.property.varsInput"></a>
+##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-template.file.File.property.varsInput"></a>
 
 ```typescript
 public readonly varsInput: {[ key: string ]: string};
@@ -2882,7 +2882,7 @@ public readonly varsInput: {[ key: string ]: string};
 
 ---
 
-##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.File.property.filename"></a>
+##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.file.File.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -2892,7 +2892,7 @@ public readonly filename: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.File.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.file.File.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -2902,7 +2902,7 @@ public readonly id: string;
 
 ---
 
-##### `template`<sup>Required</sup> <a name="template" id="@cdktf/provider-template.File.property.template"></a>
+##### `template`<sup>Required</sup> <a name="template" id="@cdktf/provider-template.file.File.property.template"></a>
 
 ```typescript
 public readonly template: string;
@@ -2912,7 +2912,7 @@ public readonly template: string;
 
 ---
 
-##### `vars`<sup>Required</sup> <a name="vars" id="@cdktf/provider-template.File.property.vars"></a>
+##### `vars`<sup>Required</sup> <a name="vars" id="@cdktf/provider-template.file.File.property.vars"></a>
 
 ```typescript
 public readonly vars: {[ key: string ]: string};
@@ -2926,11 +2926,11 @@ public readonly vars: {[ key: string ]: string};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.File.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.File.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.file.File.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -2940,27 +2940,27 @@ public readonly tfResourceType: string;
 
 ---
 
-### TemplateProvider <a name="TemplateProvider" id="@cdktf/provider-template.TemplateProvider"></a>
+### TemplateProvider <a name="TemplateProvider" id="@cdktf/provider-template.provider.TemplateProvider"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/template template}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.TemplateProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.provider.TemplateProvider.Initializer"></a>
 
 ```typescript
-import { TemplateProvider } from '@cdktf/provider-template'
+import { provider } from '@cdktf/provider-template'
 
-new TemplateProvider(scope: Construct, id: string, config?: TemplateProviderConfig)
+new provider.TemplateProvider(scope: Construct, id: string, config?: TemplateProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-template.TemplateProviderConfig">TemplateProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.Initializer.parameter.config">config</a></code> | <code>@cdktf/provider-template.provider.TemplateProviderConfig</code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.TemplateProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.provider.TemplateProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -2968,7 +2968,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.TemplateProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-template.provider.TemplateProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -2978,9 +2978,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-template.TemplateProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-template.provider.TemplateProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-template.TemplateProviderConfig">TemplateProviderConfig</a>
+- *Type:* @cdktf/provider-template.provider.TemplateProviderConfig
 
 ---
 
@@ -2988,17 +2988,17 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.resetAlias">resetAlias</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.TemplateProvider.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.provider.TemplateProvider.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3006,25 +3006,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.TemplateProvider.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-template.provider.TemplateProvider.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.TemplateProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-template.provider.TemplateProvider.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.TemplateProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-template.provider.TemplateProvider.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.TemplateProvider.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-template.provider.TemplateProvider.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -3032,7 +3032,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.TemplateProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-template.provider.TemplateProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -3040,7 +3040,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.TemplateProvider.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-template.provider.TemplateProvider.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -3048,13 +3048,13 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.TemplateProvider.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-template.provider.TemplateProvider.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.TemplateProvider.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-template.provider.TemplateProvider.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -3062,7 +3062,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-template.TemplateProvider.resetAlias"></a>
+##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-template.provider.TemplateProvider.resetAlias"></a>
 
 ```typescript
 public resetAlias(): void
@@ -3072,16 +3072,16 @@ public resetAlias(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.TemplateProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-template.provider.TemplateProvider.isConstruct"></a>
 
 ```typescript
-import { TemplateProvider } from '@cdktf/provider-template'
+import { provider } from '@cdktf/provider-template'
 
-TemplateProvider.isConstruct(x: any)
+provider.TemplateProvider.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
@@ -3100,7 +3100,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.TemplateProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.provider.TemplateProvider.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -3112,20 +3112,20 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.TemplateProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-template.provider.TemplateProvider.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -3137,7 +3137,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.TemplateProvider.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-template.provider.TemplateProvider.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -3147,7 +3147,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.TemplateProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.provider.TemplateProvider.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3157,7 +3157,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.TemplateProvider.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-template.provider.TemplateProvider.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -3167,7 +3167,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-template.TemplateProvider.property.metaAttributes"></a>
+##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-template.provider.TemplateProvider.property.metaAttributes"></a>
 
 ```typescript
 public readonly metaAttributes: {[ key: string ]: any};
@@ -3177,7 +3177,7 @@ public readonly metaAttributes: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.TemplateProvider.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-template.provider.TemplateProvider.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -3187,7 +3187,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.TemplateProvider.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-template.provider.TemplateProvider.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -3197,7 +3197,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-template.TemplateProvider.property.terraformProviderSource"></a>
+##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-template.provider.TemplateProvider.property.terraformProviderSource"></a>
 
 ```typescript
 public readonly terraformProviderSource: string;
@@ -3207,7 +3207,7 @@ public readonly terraformProviderSource: string;
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-template.TemplateProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-template.provider.TemplateProvider.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -3217,7 +3217,7 @@ public readonly alias: string;
 
 ---
 
-##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-template.TemplateProvider.property.aliasInput"></a>
+##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-template.provider.TemplateProvider.property.aliasInput"></a>
 
 ```typescript
 public readonly aliasInput: string;
@@ -3231,11 +3231,11 @@ public readonly aliasInput: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.TemplateProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.TemplateProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-template.provider.TemplateProvider.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -3247,35 +3247,35 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### CloudinitConfigConfig <a name="CloudinitConfigConfig" id="@cdktf/provider-template.CloudinitConfigConfig"></a>
+### CloudinitConfigConfig <a name="CloudinitConfigConfig" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.CloudinitConfigConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.Initializer"></a>
 
 ```typescript
-import { CloudinitConfigConfig } from '@cdktf/provider-template'
+import { cloudinitConfig } from '@cdktf/provider-template'
 
-const cloudinitConfigConfig: CloudinitConfigConfig = { ... }
+const cloudinitConfigConfig: cloudinitConfig.CloudinitConfigConfig = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.part">part</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]</code> | part block. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#base64_encode CloudinitConfig#base64_encode}. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#gzip CloudinitConfig#gzip}. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#id CloudinitConfig#id}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.part">part</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]</code> | part block. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#base64_encode CloudinitConfig#base64_encode}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#gzip CloudinitConfig#gzip}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#id CloudinitConfig#id}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.CloudinitConfigConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -3285,7 +3285,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.CloudinitConfigConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -3295,7 +3295,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.CloudinitConfigConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -3305,7 +3305,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.CloudinitConfigConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -3315,7 +3315,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.CloudinitConfigConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -3325,7 +3325,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.CloudinitConfigConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -3335,7 +3335,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.CloudinitConfigConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -3345,13 +3345,13 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.CloudinitConfigConfig.property.part"></a>
+##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.part"></a>
 
 ```typescript
 public readonly part: IResolvable | CloudinitConfigPart[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]
 
 part block.
 
@@ -3359,7 +3359,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `base64Encode`<sup>Optional</sup> <a name="base64Encode" id="@cdktf/provider-template.CloudinitConfigConfig.property.base64Encode"></a>
+##### `base64Encode`<sup>Optional</sup> <a name="base64Encode" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.base64Encode"></a>
 
 ```typescript
 public readonly base64Encode: boolean | IResolvable;
@@ -3371,7 +3371,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `gzip`<sup>Optional</sup> <a name="gzip" id="@cdktf/provider-template.CloudinitConfigConfig.property.gzip"></a>
+##### `gzip`<sup>Optional</sup> <a name="gzip" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.gzip"></a>
 
 ```typescript
 public readonly gzip: boolean | IResolvable;
@@ -3383,7 +3383,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.CloudinitConfigConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3398,28 +3398,28 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-### CloudinitConfigPart <a name="CloudinitConfigPart" id="@cdktf/provider-template.CloudinitConfigPart"></a>
+### CloudinitConfigPart <a name="CloudinitConfigPart" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.CloudinitConfigPart.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.Initializer"></a>
 
 ```typescript
-import { CloudinitConfigPart } from '@cdktf/provider-template'
+import { cloudinitConfig } from '@cdktf/provider-template'
 
-const cloudinitConfigPart: CloudinitConfigPart = { ... }
+const cloudinitConfigPart: cloudinitConfig.CloudinitConfigPart = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPart.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#content CloudinitConfig#content}. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPart.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#content_type CloudinitConfig#content_type}. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPart.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#filename CloudinitConfig#filename}. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPart.property.mergeType">mergeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#merge_type CloudinitConfig#merge_type}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#content CloudinitConfig#content}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#content_type CloudinitConfig#content_type}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#filename CloudinitConfig#filename}. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.mergeType">mergeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#merge_type CloudinitConfig#merge_type}. |
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.CloudinitConfigPart.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -3431,7 +3431,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktf/provider-template.CloudinitConfigPart.property.contentType"></a>
+##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -3443,7 +3443,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.CloudinitConfigPart.property.filename"></a>
+##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -3455,7 +3455,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `mergeType`<sup>Optional</sup> <a name="mergeType" id="@cdktf/provider-template.CloudinitConfigPart.property.mergeType"></a>
+##### `mergeType`<sup>Optional</sup> <a name="mergeType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart.property.mergeType"></a>
 
 ```typescript
 public readonly mergeType: string;
@@ -3467,35 +3467,35 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-### DataTemplateCloudinitConfigConfig <a name="DataTemplateCloudinitConfigConfig" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig"></a>
+### DataTemplateCloudinitConfigConfig <a name="DataTemplateCloudinitConfigConfig" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.Initializer"></a>
 
 ```typescript
-import { DataTemplateCloudinitConfigConfig } from '@cdktf/provider-template'
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
 
-const dataTemplateCloudinitConfigConfig: DataTemplateCloudinitConfigConfig = { ... }
+const dataTemplateCloudinitConfigConfig: dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.part">part</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]</code> | part block. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#base64_encode DataTemplateCloudinitConfig#base64_encode}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#gzip DataTemplateCloudinitConfig#gzip}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#id DataTemplateCloudinitConfig#id}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.part">part</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]</code> | part block. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.base64Encode">base64Encode</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#base64_encode DataTemplateCloudinitConfig#base64_encode}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.gzip">gzip</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#gzip DataTemplateCloudinitConfig#gzip}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#id DataTemplateCloudinitConfig#id}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -3505,7 +3505,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -3515,7 +3515,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -3525,7 +3525,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -3535,7 +3535,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -3545,7 +3545,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -3555,7 +3555,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -3565,13 +3565,13 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.part"></a>
+##### `part`<sup>Required</sup> <a name="part" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.part"></a>
 
 ```typescript
 public readonly part: IResolvable | DataTemplateCloudinitConfigPart[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]
 
 part block.
 
@@ -3579,7 +3579,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `base64Encode`<sup>Optional</sup> <a name="base64Encode" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.base64Encode"></a>
+##### `base64Encode`<sup>Optional</sup> <a name="base64Encode" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.base64Encode"></a>
 
 ```typescript
 public readonly base64Encode: boolean | IResolvable;
@@ -3591,7 +3591,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `gzip`<sup>Optional</sup> <a name="gzip" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.gzip"></a>
+##### `gzip`<sup>Optional</sup> <a name="gzip" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.gzip"></a>
 
 ```typescript
 public readonly gzip: boolean | IResolvable;
@@ -3603,7 +3603,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.DataTemplateCloudinitConfigConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3618,28 +3618,28 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-### DataTemplateCloudinitConfigPart <a name="DataTemplateCloudinitConfigPart" id="@cdktf/provider-template.DataTemplateCloudinitConfigPart"></a>
+### DataTemplateCloudinitConfigPart <a name="DataTemplateCloudinitConfigPart" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.DataTemplateCloudinitConfigPart.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.Initializer"></a>
 
 ```typescript
-import { DataTemplateCloudinitConfigPart } from '@cdktf/provider-template'
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
 
-const dataTemplateCloudinitConfigPart: DataTemplateCloudinitConfigPart = { ... }
+const dataTemplateCloudinitConfigPart: dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#content DataTemplateCloudinitConfig#content}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#content_type DataTemplateCloudinitConfig#content_type}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#filename DataTemplateCloudinitConfig#filename}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.mergeType">mergeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#merge_type DataTemplateCloudinitConfig#merge_type}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#content DataTemplateCloudinitConfig#content}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#content_type DataTemplateCloudinitConfig#content_type}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#filename DataTemplateCloudinitConfig#filename}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.mergeType">mergeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#merge_type DataTemplateCloudinitConfig#merge_type}. |
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -3651,7 +3651,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.contentType"></a>
+##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -3663,7 +3663,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.filename"></a>
+##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -3675,7 +3675,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `mergeType`<sup>Optional</sup> <a name="mergeType" id="@cdktf/provider-template.DataTemplateCloudinitConfigPart.property.mergeType"></a>
+##### `mergeType`<sup>Optional</sup> <a name="mergeType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.property.mergeType"></a>
 
 ```typescript
 public readonly mergeType: string;
@@ -3687,35 +3687,35 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-### DataTemplateFileConfig <a name="DataTemplateFileConfig" id="@cdktf/provider-template.DataTemplateFileConfig"></a>
+### DataTemplateFileConfig <a name="DataTemplateFileConfig" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.DataTemplateFileConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.Initializer"></a>
 
 ```typescript
-import { DataTemplateFileConfig } from '@cdktf/provider-template'
+import { dataTemplateFile } from '@cdktf/provider-template'
 
-const dataTemplateFileConfig: DataTemplateFileConfig = { ... }
+const dataTemplateFileConfig: dataTemplateFile.DataTemplateFileConfig = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#filename DataTemplateFile#filename}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#id DataTemplateFile#id}. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.template">template</a></code> | <code>string</code> | Contents of the template. |
-| <code><a href="#@cdktf/provider-template.DataTemplateFileConfig.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | variables to substitute. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#filename DataTemplateFile#filename}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#id DataTemplateFile#id}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.template">template</a></code> | <code>string</code> | Contents of the template. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | variables to substitute. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.DataTemplateFileConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -3725,7 +3725,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.DataTemplateFileConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -3735,7 +3735,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.DataTemplateFileConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -3745,7 +3745,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.DataTemplateFileConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -3755,7 +3755,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.DataTemplateFileConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -3765,7 +3765,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.DataTemplateFileConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -3775,7 +3775,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.DataTemplateFileConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -3785,7 +3785,7 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.DataTemplateFileConfig.property.filename"></a>
+##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -3797,7 +3797,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.DataTemplateFileConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3812,7 +3812,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-template.DataTemplateFileConfig.property.template"></a>
+##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.template"></a>
 
 ```typescript
 public readonly template: string;
@@ -3826,7 +3826,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `vars`<sup>Optional</sup> <a name="vars" id="@cdktf/provider-template.DataTemplateFileConfig.property.vars"></a>
+##### `vars`<sup>Optional</sup> <a name="vars" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.vars"></a>
 
 ```typescript
 public readonly vars: {[ key: string ]: string};
@@ -3840,35 +3840,35 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-### DirConfig <a name="DirConfig" id="@cdktf/provider-template.DirConfig"></a>
+### DirConfig <a name="DirConfig" id="@cdktf/provider-template.dir.DirConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.DirConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.dir.DirConfig.Initializer"></a>
 
 ```typescript
-import { DirConfig } from '@cdktf/provider-template'
+import { dir } from '@cdktf/provider-template'
 
-const dirConfig: DirConfig = { ... }
+const dirConfig: dir.DirConfig = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.destinationDir">destinationDir</a></code> | <code>string</code> | Path to the directory where the templated files will be written. |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.sourceDir">sourceDir</a></code> | <code>string</code> | Path to the directory where the files to template reside. |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#id Dir#id}. |
-| <code><a href="#@cdktf/provider-template.DirConfig.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | Variables to substitute. |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.destinationDir">destinationDir</a></code> | <code>string</code> | Path to the directory where the templated files will be written. |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.sourceDir">sourceDir</a></code> | <code>string</code> | Path to the directory where the files to template reside. |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#id Dir#id}. |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | Variables to substitute. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.DirConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.dir.DirConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -3878,7 +3878,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.DirConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.dir.DirConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -3888,7 +3888,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.DirConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.dir.DirConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -3898,7 +3898,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.DirConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.dir.DirConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -3908,7 +3908,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.DirConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.dir.DirConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -3918,7 +3918,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.DirConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dir.DirConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -3928,7 +3928,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.DirConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.dir.DirConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -3938,7 +3938,7 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `destinationDir`<sup>Required</sup> <a name="destinationDir" id="@cdktf/provider-template.DirConfig.property.destinationDir"></a>
+##### `destinationDir`<sup>Required</sup> <a name="destinationDir" id="@cdktf/provider-template.dir.DirConfig.property.destinationDir"></a>
 
 ```typescript
 public readonly destinationDir: string;
@@ -3952,7 +3952,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `sourceDir`<sup>Required</sup> <a name="sourceDir" id="@cdktf/provider-template.DirConfig.property.sourceDir"></a>
+##### `sourceDir`<sup>Required</sup> <a name="sourceDir" id="@cdktf/provider-template.dir.DirConfig.property.sourceDir"></a>
 
 ```typescript
 public readonly sourceDir: string;
@@ -3966,7 +3966,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.DirConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.dir.DirConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3981,7 +3981,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `vars`<sup>Optional</sup> <a name="vars" id="@cdktf/provider-template.DirConfig.property.vars"></a>
+##### `vars`<sup>Optional</sup> <a name="vars" id="@cdktf/provider-template.dir.DirConfig.property.vars"></a>
 
 ```typescript
 public readonly vars: {[ key: string ]: string};
@@ -3995,35 +3995,35 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-### FileConfig <a name="FileConfig" id="@cdktf/provider-template.FileConfig"></a>
+### FileConfig <a name="FileConfig" id="@cdktf/provider-template.file.FileConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.FileConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.file.FileConfig.Initializer"></a>
 
 ```typescript
-import { FileConfig } from '@cdktf/provider-template'
+import { file } from '@cdktf/provider-template'
 
-const fileConfig: FileConfig = { ... }
+const fileConfig: file.FileConfig = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/file#filename File#filename}. |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/file#id File#id}. |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.template">template</a></code> | <code>string</code> | Contents of the template. |
-| <code><a href="#@cdktf/provider-template.FileConfig.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | variables to substitute. |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.filename">filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/file#filename File#filename}. |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/file#id File#id}. |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.template">template</a></code> | <code>string</code> | Contents of the template. |
+| <code><a href="#@cdktf/provider-template.file.FileConfig.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | variables to substitute. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.FileConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-template.file.FileConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -4033,7 +4033,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.FileConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-template.file.FileConfig.property.count"></a>
 
 ```typescript
 public readonly count: number;
@@ -4043,7 +4043,7 @@ public readonly count: number;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.FileConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-template.file.FileConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -4053,7 +4053,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.FileConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-template.file.FileConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -4063,7 +4063,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.FileConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-template.file.FileConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -4073,7 +4073,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.FileConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.file.FileConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -4083,7 +4083,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.FileConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-template.file.FileConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
@@ -4093,7 +4093,7 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.FileConfig.property.filename"></a>
+##### `filename`<sup>Optional</sup> <a name="filename" id="@cdktf/provider-template.file.FileConfig.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -4105,7 +4105,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.FileConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-template.file.FileConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -4120,7 +4120,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-template.FileConfig.property.template"></a>
+##### `template`<sup>Optional</sup> <a name="template" id="@cdktf/provider-template.file.FileConfig.property.template"></a>
 
 ```typescript
 public readonly template: string;
@@ -4134,7 +4134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-##### `vars`<sup>Optional</sup> <a name="vars" id="@cdktf/provider-template.FileConfig.property.vars"></a>
+##### `vars`<sup>Optional</sup> <a name="vars" id="@cdktf/provider-template.file.FileConfig.property.vars"></a>
 
 ```typescript
 public readonly vars: {[ key: string ]: string};
@@ -4148,25 +4148,25 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ---
 
-### TemplateProviderConfig <a name="TemplateProviderConfig" id="@cdktf/provider-template.TemplateProviderConfig"></a>
+### TemplateProviderConfig <a name="TemplateProviderConfig" id="@cdktf/provider-template.provider.TemplateProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-template.TemplateProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-template.provider.TemplateProviderConfig.Initializer"></a>
 
 ```typescript
-import { TemplateProviderConfig } from '@cdktf/provider-template'
+import { provider } from '@cdktf/provider-template'
 
-const templateProviderConfig: TemplateProviderConfig = { ... }
+const templateProviderConfig: provider.TemplateProviderConfig = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.TemplateProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-template.TemplateProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-template.provider.TemplateProviderConfig.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -4182,25 +4182,25 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### CloudinitConfigPartList <a name="CloudinitConfigPartList" id="@cdktf/provider-template.CloudinitConfigPartList"></a>
+### CloudinitConfigPartList <a name="CloudinitConfigPartList" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.CloudinitConfigPartList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer"></a>
 
 ```typescript
-import { CloudinitConfigPartList } from '@cdktf/provider-template'
+import { cloudinitConfig } from '@cdktf/provider-template'
 
-new CloudinitConfigPartList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new cloudinitConfig.CloudinitConfigPartList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.CloudinitConfigPartList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4208,7 +4208,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4216,7 +4216,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-template.CloudinitConfigPartList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -4228,20 +4228,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.CloudinitConfigPartList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-template.CloudinitConfigPartList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4249,13 +4249,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.CloudinitConfigPartList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.CloudinitConfigPartList.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4265,13 +4265,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-template.CloudinitConfigPartList.get"></a>
+##### `get` <a name="get" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.get"></a>
 
 ```typescript
 public get(index: number): CloudinitConfigPartOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-template.CloudinitConfigPartList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -4284,13 +4284,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.CloudinitConfigPartList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4304,7 +4304,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.CloudinitConfigPartList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4314,37 +4314,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.CloudinitConfigPartList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | CloudinitConfigPart[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart[]
 
 ---
 
 
-### CloudinitConfigPartOutputReference <a name="CloudinitConfigPartOutputReference" id="@cdktf/provider-template.CloudinitConfigPartOutputReference"></a>
+### CloudinitConfigPartOutputReference <a name="CloudinitConfigPartOutputReference" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer"></a>
 
 ```typescript
-import { CloudinitConfigPartOutputReference } from '@cdktf/provider-template'
+import { cloudinitConfig } from '@cdktf/provider-template'
 
-new CloudinitConfigPartOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new cloudinitConfig.CloudinitConfigPartOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4352,7 +4352,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4360,7 +4360,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -4368,7 +4368,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -4380,152 +4380,152 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.resetContentType">resetContentType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.resetFilename">resetFilename</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.resetMergeType">resetMergeType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resetContentType">resetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resetFilename">resetFilename</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resetMergeType">resetMergeType</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4533,13 +4533,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4549,19 +4549,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetContentType` <a name="resetContentType" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.resetContentType"></a>
+##### `resetContentType` <a name="resetContentType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resetContentType"></a>
 
 ```typescript
 public resetContentType(): void
 ```
 
-##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.resetFilename"></a>
+##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resetFilename"></a>
 
 ```typescript
 public resetFilename(): void
 ```
 
-##### `resetMergeType` <a name="resetMergeType" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.resetMergeType"></a>
+##### `resetMergeType` <a name="resetMergeType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.resetMergeType"></a>
 
 ```typescript
 public resetMergeType(): void
@@ -4572,21 +4572,21 @@ public resetMergeType(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.mergeTypeInput">mergeTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.filename">filename</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.mergeType">mergeType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.CloudinitConfigPartOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.mergeTypeInput">mergeTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.filename">filename</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.mergeType">mergeType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.internalValue">internalValue</a></code> | <code>@cdktf/provider-template.cloudinitConfig.CloudinitConfigPart \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4600,7 +4600,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4610,7 +4610,7 @@ public readonly fqn: string;
 
 ---
 
-##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.contentInput"></a>
+##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.contentInput"></a>
 
 ```typescript
 public readonly contentInput: string;
@@ -4620,7 +4620,7 @@ public readonly contentInput: string;
 
 ---
 
-##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.contentTypeInput"></a>
+##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.contentTypeInput"></a>
 
 ```typescript
 public readonly contentTypeInput: string;
@@ -4630,7 +4630,7 @@ public readonly contentTypeInput: string;
 
 ---
 
-##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.filenameInput"></a>
+##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.filenameInput"></a>
 
 ```typescript
 public readonly filenameInput: string;
@@ -4640,7 +4640,7 @@ public readonly filenameInput: string;
 
 ---
 
-##### `mergeTypeInput`<sup>Optional</sup> <a name="mergeTypeInput" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.mergeTypeInput"></a>
+##### `mergeTypeInput`<sup>Optional</sup> <a name="mergeTypeInput" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.mergeTypeInput"></a>
 
 ```typescript
 public readonly mergeTypeInput: string;
@@ -4650,7 +4650,7 @@ public readonly mergeTypeInput: string;
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -4660,7 +4660,7 @@ public readonly content: string;
 
 ---
 
-##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.contentType"></a>
+##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -4670,7 +4670,7 @@ public readonly contentType: string;
 
 ---
 
-##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.filename"></a>
+##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -4680,7 +4680,7 @@ public readonly filename: string;
 
 ---
 
-##### `mergeType`<sup>Required</sup> <a name="mergeType" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.mergeType"></a>
+##### `mergeType`<sup>Required</sup> <a name="mergeType" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.mergeType"></a>
 
 ```typescript
 public readonly mergeType: string;
@@ -4690,36 +4690,36 @@ public readonly mergeType: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.CloudinitConfigPartOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | CloudinitConfigPart;
+public readonly internalValue: CloudinitConfigPart | IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.CloudinitConfigPart">CloudinitConfigPart</a>
+- *Type:* @cdktf/provider-template.cloudinitConfig.CloudinitConfigPart | cdktf.IResolvable
 
 ---
 
 
-### DataTemplateCloudinitConfigPartList <a name="DataTemplateCloudinitConfigPartList" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList"></a>
+### DataTemplateCloudinitConfigPartList <a name="DataTemplateCloudinitConfigPartList" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer"></a>
 
 ```typescript
-import { DataTemplateCloudinitConfigPartList } from '@cdktf/provider-template'
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
 
-new DataTemplateCloudinitConfigPartList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4727,7 +4727,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4735,7 +4735,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -4747,20 +4747,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4768,13 +4768,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4784,13 +4784,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.get"></a>
+##### `get` <a name="get" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.get"></a>
 
 ```typescript
 public get(index: number): DataTemplateCloudinitConfigPartOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -4803,13 +4803,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4823,7 +4823,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4833,37 +4833,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DataTemplateCloudinitConfigPart[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>[]
+- *Type:* cdktf.IResolvable | @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart[]
 
 ---
 
 
-### DataTemplateCloudinitConfigPartOutputReference <a name="DataTemplateCloudinitConfigPartOutputReference" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference"></a>
+### DataTemplateCloudinitConfigPartOutputReference <a name="DataTemplateCloudinitConfigPartOutputReference" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer"></a>
 
 ```typescript
-import { DataTemplateCloudinitConfigPartOutputReference } from '@cdktf/provider-template'
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
 
-new DataTemplateCloudinitConfigPartOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4871,7 +4871,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4879,7 +4879,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -4887,7 +4887,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -4899,152 +4899,152 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resetContentType">resetContentType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resetFilename">resetFilename</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resetMergeType">resetMergeType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resetContentType">resetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resetFilename">resetFilename</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resetMergeType">resetMergeType</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -5052,13 +5052,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -5068,19 +5068,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetContentType` <a name="resetContentType" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resetContentType"></a>
+##### `resetContentType` <a name="resetContentType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resetContentType"></a>
 
 ```typescript
 public resetContentType(): void
 ```
 
-##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resetFilename"></a>
+##### `resetFilename` <a name="resetFilename" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resetFilename"></a>
 
 ```typescript
 public resetFilename(): void
 ```
 
-##### `resetMergeType` <a name="resetMergeType" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.resetMergeType"></a>
+##### `resetMergeType` <a name="resetMergeType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.resetMergeType"></a>
 
 ```typescript
 public resetMergeType(): void
@@ -5091,21 +5091,21 @@ public resetMergeType(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.mergeTypeInput">mergeTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.filename">filename</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.mergeType">mergeType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.filenameInput">filenameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.mergeTypeInput">mergeTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.filename">filename</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.mergeType">mergeType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.internalValue">internalValue</a></code> | <code>@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -5119,7 +5119,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -5129,7 +5129,7 @@ public readonly fqn: string;
 
 ---
 
-##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.contentInput"></a>
+##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.contentInput"></a>
 
 ```typescript
 public readonly contentInput: string;
@@ -5139,7 +5139,7 @@ public readonly contentInput: string;
 
 ---
 
-##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.contentTypeInput"></a>
+##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.contentTypeInput"></a>
 
 ```typescript
 public readonly contentTypeInput: string;
@@ -5149,7 +5149,7 @@ public readonly contentTypeInput: string;
 
 ---
 
-##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.filenameInput"></a>
+##### `filenameInput`<sup>Optional</sup> <a name="filenameInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.filenameInput"></a>
 
 ```typescript
 public readonly filenameInput: string;
@@ -5159,7 +5159,7 @@ public readonly filenameInput: string;
 
 ---
 
-##### `mergeTypeInput`<sup>Optional</sup> <a name="mergeTypeInput" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.mergeTypeInput"></a>
+##### `mergeTypeInput`<sup>Optional</sup> <a name="mergeTypeInput" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.mergeTypeInput"></a>
 
 ```typescript
 public readonly mergeTypeInput: string;
@@ -5169,7 +5169,7 @@ public readonly mergeTypeInput: string;
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -5179,7 +5179,7 @@ public readonly content: string;
 
 ---
 
-##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.contentType"></a>
+##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -5189,7 +5189,7 @@ public readonly contentType: string;
 
 ---
 
-##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.filename"></a>
+##### `filename`<sup>Required</sup> <a name="filename" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.filename"></a>
 
 ```typescript
 public readonly filename: string;
@@ -5199,7 +5199,7 @@ public readonly filename: string;
 
 ---
 
-##### `mergeType`<sup>Required</sup> <a name="mergeType" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.mergeType"></a>
+##### `mergeType`<sup>Required</sup> <a name="mergeType" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.mergeType"></a>
 
 ```typescript
 public readonly mergeType: string;
@@ -5209,13 +5209,13 @@ public readonly mergeType: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.DataTemplateCloudinitConfigPartOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | DataTemplateCloudinitConfigPart;
+public readonly internalValue: DataTemplateCloudinitConfigPart | IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-template.DataTemplateCloudinitConfigPart">DataTemplateCloudinitConfigPart</a>
+- *Type:* @cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart | cdktf.IResolvable
 
 ---
 
