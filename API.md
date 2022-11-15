@@ -292,6 +292,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -324,6 +326,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isTerraformElement"></a>
+
+```typescript
+import { cloudinitConfig } from '@cdktf/provider-template'
+
+cloudinitConfig.CloudinitConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isTerraformResource"></a>
+
+```typescript
+import { cloudinitConfig } from '@cdktf/provider-template'
+
+cloudinitConfig.CloudinitConfig.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.cloudinitConfig.CloudinitConfig.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -897,6 +927,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -929,6 +961,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement"></a>
+
+```typescript
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
+
+dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource"></a>
+
+```typescript
+import { dataTemplateCloudinitConfig } from '@cdktf/provider-template'
+
+dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1474,6 +1534,8 @@ public resetVars(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -1506,6 +1568,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformElement"></a>
+
+```typescript
+import { dataTemplateFile } from '@cdktf/provider-template'
+
+dataTemplateFile.DataTemplateFile.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformDataSource"></a>
+
+```typescript
+import { dataTemplateFile } from '@cdktf/provider-template'
+
+dataTemplateFile.DataTemplateFile.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2037,6 +2127,8 @@ public resetVars(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-template.dir.Dir.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.dir.Dir.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2069,6 +2161,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-template.dir.Dir.isTerraformElement"></a>
+
+```typescript
+import { dir } from '@cdktf/provider-template'
+
+dir.Dir.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dir.Dir.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-template.dir.Dir.isTerraformResource"></a>
+
+```typescript
+import { dir } from '@cdktf/provider-template'
+
+dir.Dir.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dir.Dir.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2625,6 +2745,8 @@ public resetVars(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-template.file.File.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.file.File.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.file.File.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2657,6 +2779,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-template.file.File.isTerraformElement"></a>
+
+```typescript
+import { file } from '@cdktf/provider-template'
+
+file.File.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.file.File.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-template.file.File.isTerraformResource"></a>
+
+```typescript
+import { file } from '@cdktf/provider-template'
+
+file.File.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.file.File.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3073,6 +3223,8 @@ public resetAlias(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -3105,6 +3257,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-template.provider.TemplateProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-template'
+
+provider.TemplateProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.provider.TemplateProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-template.provider.TemplateProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-template'
+
+provider.TemplateProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.provider.TemplateProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
