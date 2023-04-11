@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/template/d/cloudinit
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.NewDataTemplateCloudinitConfig(scope Construct, id *string, config DataTemplateCloudinitConfigConfig) DataTemplateCloudinitConfig
 ```
@@ -300,7 +300,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 &datatemplatecloudinitconfig.DataTemplateCloudinitConfigConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 &datatemplatecloudinitconfig.DataTemplateCloudinitConfigPart {
 	Content: *string,
@@ -861,7 +861,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/templ
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.NewDataTemplateCloudinitConfigPartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTemplateCloudinitConfigPartList
 ```
@@ -1004,7 +1004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/v6/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.NewDataTemplateCloudinitConfigPartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTemplateCloudinitConfigPartOutputReference
 ```
