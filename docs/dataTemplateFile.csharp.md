@@ -1,3 +1,7 @@
+# `data_template_file`
+
+Refer to the Terraform Registory for docs: [`data_template_file`](https://www.terraform.io/docs/providers/template/d/file).
+
 # `dataTemplateFile` Submodule <a name="`dataTemplateFile` Submodule" id="@cdktf/provider-template.dataTemplateFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
