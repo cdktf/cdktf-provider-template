@@ -1,3 +1,7 @@
+# `data_template_cloudinit_config`
+
+Refer to the Terraform Registory for docs: [`data_template_cloudinit_config`](https://www.terraform.io/docs/providers/template/d/cloudinit_config).
+
 # `dataTemplateCloudinitConfig` Submodule <a name="`dataTemplateCloudinitConfig` Submodule" id="@cdktf/provider-template.dataTemplateCloudinitConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
