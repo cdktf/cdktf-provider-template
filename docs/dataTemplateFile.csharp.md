@@ -1,6 +1,6 @@
 # `data_template_file`
 
-Refer to the Terraform Registory for docs: [`data_template_file`](https://www.terraform.io/docs/providers/template/d/file).
+Refer to the Terraform Registory for docs: [`data_template_file`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file).
 
 # `dataTemplateFile` Submodule <a name="`dataTemplateFile` Submodule" id="@cdktf/provider-template.dataTemplateFile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_template_file`](https://www.te
 
 ### DataTemplateFile <a name="DataTemplateFile" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/template/d/file template_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file template_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer"></a>
 
@@ -366,7 +366,7 @@ DataTemplateFile.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -458,10 +458,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -624,7 +624,7 @@ using HashiCorp.Cdktf.Providers.Template;
 
 new DataTemplateFileConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -642,14 +642,14 @@ new DataTemplateFileConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.filename">Filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#filename DataTemplateFile#filename}. |
-| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#id DataTemplateFile#id}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.filename">Filename</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#filename DataTemplateFile#filename}. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#id DataTemplateFile#id}. |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.template">Template</a></code> | <code>string</code> | Contents of the template. |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.vars">Vars</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | variables to substitute. |
 
@@ -668,10 +668,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -733,7 +733,7 @@ public string Filename { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#filename DataTemplateFile#filename}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#filename DataTemplateFile#filename}.
 
 ---
 
@@ -745,7 +745,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#id DataTemplateFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#id DataTemplateFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ public string Template { get; set; }
 
 Contents of the template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#template DataTemplateFile#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#template DataTemplateFile#template}
 
 ---
 
@@ -776,7 +776,7 @@ public System.Collections.Generic.IDictionary<string, string> Vars { get; set; }
 
 variables to substitute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#vars DataTemplateFile#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#vars DataTemplateFile#vars}
 
 ---
 

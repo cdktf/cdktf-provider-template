@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`template`](https://www.terraform.io/docs/providers/template).
+Refer to the Terraform Registory for docs: [`template`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-template.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`template`](https://www.terraform.io
 
 ### TemplateProvider <a name="TemplateProvider" id="@cdktf/provider-template.provider.TemplateProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/template template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.provider.TemplateProvider.Initializer"></a>
 
@@ -52,7 +52,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template#alias TemplateProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs#alias TemplateProvider#alias}
 
 ---
 
@@ -379,7 +379,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template#alias TemplateProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs#alias TemplateProvider#alias}
 
 ---
 

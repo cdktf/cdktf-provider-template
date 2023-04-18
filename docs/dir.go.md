@@ -1,6 +1,6 @@
 # `template_dir`
 
-Refer to the Terraform Registory for docs: [`template_dir`](https://www.terraform.io/docs/providers/template/r/dir).
+Refer to the Terraform Registory for docs: [`template_dir`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir).
 
 # `dir` Submodule <a name="`dir` Submodule" id="@cdktf/provider-template.dir"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`template_dir`](https://www.terrafor
 
 ### Dir <a name="Dir" id="@cdktf/provider-template.dir.Dir"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/template/r/dir template_dir}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir template_dir}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dir.Dir.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
+import "github.com/cdktf/cdktf-provider-template-go/template/dir"
 
 dir.NewDir(scope Construct, id *string, config DirConfig) Dir
 ```
@@ -284,7 +284,7 @@ func ResetVars()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-template.dir.Dir.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
+import "github.com/cdktf/cdktf-provider-template-go/template/dir"
 
 dir.Dir_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-template.dir.Dir.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
+import "github.com/cdktf/cdktf-provider-template-go/template/dir"
 
 dir.Dir_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dir.Dir_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-template.dir.Dir.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
+import "github.com/cdktf/cdktf-provider-template-go/template/dir"
 
 dir.Dir_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ dir.Dir_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-template.dir.Dir.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.Dir.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.Dir.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.dir.Dir.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.Dir.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.Dir.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.Dir.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.Dir.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-template.dir.Dir.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -617,11 +617,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.dir.DirConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
+import "github.com/cdktf/cdktf-provider-template-go/template/dir"
 
 &dir.DirConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-template-go/template/v6/dir"
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.destinationDir">DestinationDir</a></code> | <code>*string</code> | Path to the directory where the templated files will be written. |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.sourceDir">SourceDir</a></code> | <code>*string</code> | Path to the directory where the files to template reside. |
-| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#id Dir#id}. |
+| <code><a href="#@cdktf/provider-template.dir.DirConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#id Dir#id}. |
 | <code><a href="#@cdktf/provider-template.dir.DirConfig.property.vars">Vars</a></code> | <code>*map[string]*string</code> | Variables to substitute. |
 
 ---
@@ -665,10 +665,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-template.dir.DirConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,7 +732,7 @@ DestinationDir *string
 
 Path to the directory where the templated files will be written.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#destination_dir Dir#destination_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#destination_dir Dir#destination_dir}
 
 ---
 
@@ -746,7 +746,7 @@ SourceDir *string
 
 Path to the directory where the files to template reside.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#source_dir Dir#source_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#source_dir Dir#source_dir}
 
 ---
 
@@ -758,7 +758,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#id Dir#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#id Dir#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ Vars *map[string]*string
 
 Variables to substitute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#vars Dir#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#vars Dir#vars}
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/template/r/dir
+// https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DirConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the directory where the templated files will be written
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#destination_dir Dir#destination_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#destination_dir Dir#destination_dir}
   */
   readonly destinationDir: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#id Dir#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#id Dir#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface DirConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the directory where the files to template reside
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#source_dir Dir#source_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#source_dir Dir#source_dir}
   */
   readonly sourceDir: string;
   /**
   * Variables to substitute
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#vars Dir#vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#vars Dir#vars}
   */
   readonly vars?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/template/r/dir template_dir}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir template_dir}
 */
 export class Dir extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class Dir extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/template/r/dir template_dir} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir template_dir} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
