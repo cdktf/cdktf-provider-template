@@ -1,3 +1,3 @@
 # `data_template_cloudinit_config`
 
-Refer to the Terraform Registory for docs: [`data_template_cloudinit_config`](https://www.terraform.io/docs/providers/template/d/cloudinit_config).
+Refer to the Terraform Registory for docs: [`data_template_cloudinit_config`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/cloudinit_config).

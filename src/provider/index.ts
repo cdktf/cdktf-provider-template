@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/template
+// https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface TemplateProviderConfig {
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template#alias TemplateProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs#alias TemplateProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/template template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs template}
 */
 export class TemplateProvider extends cdktf.TerraformProvider {
 
@@ -30,7 +30,7 @@ export class TemplateProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/template template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

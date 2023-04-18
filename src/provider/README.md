@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`template`](https://www.terraform.io/docs/providers/template).
+Refer to the Terraform Registory for docs: [`template`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs).
