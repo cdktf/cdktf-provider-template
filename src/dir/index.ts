@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DirConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the directory where the templated files will be written
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#destination_dir Dir#destination_dir}
   */
   readonly destinationDir: string;
@@ -27,13 +22,13 @@ export interface DirConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Path to the directory where the files to template reside
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#source_dir Dir#source_dir}
   */
   readonly sourceDir: string;
   /**
   * Variables to substitute
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir#vars Dir#vars}
   */
   readonly vars?: { [key: string]: string };

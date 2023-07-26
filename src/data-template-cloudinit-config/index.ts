@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/cloudinit_config
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataTemplateCloudinitConfigConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * part block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/cloudinit_config#part DataTemplateCloudinitConfig#part}
   */
   readonly part: DataTemplateCloudinitConfigPart[] | cdktf.IResolvable;

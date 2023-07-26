@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file
 // generated from terraform resource schema
 
@@ -25,13 +20,13 @@ export interface DataTemplateFileConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Contents of the template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#template DataTemplateFile#template}
   */
   readonly template?: string;
   /**
   * variables to substitute
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#vars DataTemplateFile#vars}
   */
   readonly vars?: { [key: string]: string };
