@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface TemplateProviderConfig {
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs#alias TemplateProvider#alias}
   */
   readonly alias?: string;

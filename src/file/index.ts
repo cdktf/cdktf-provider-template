@@ -25,13 +25,13 @@ export interface FileConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Contents of the template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/file#template File#template}
   */
   readonly template?: string;
   /**
   * variables to substitute
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/file#vars File#vars}
   */
   readonly vars?: { [key: string]: string };
