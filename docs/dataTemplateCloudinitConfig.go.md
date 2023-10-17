@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.NewDataTemplateCloudinitConfig(scope Construct, id *string, config DataTemplateCloudinitConfigConfig) DataTemplateCloudinitConfig
 ```
@@ -298,13 +298,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataTemplateCloudinitConfig resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +351,7 @@ datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,6 +359,50 @@ datatemplatecloudinitconfig.DataTemplateCloudinitConfig_IsTerraformDataSource(x 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
+
+datatemplatecloudinitconfig.DataTemplateCloudinitConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataTemplateCloudinitConfig resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataTemplateCloudinitConfig to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataTemplateCloudinitConfig that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/cloudinit_config#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTemplateCloudinitConfig to import is found.
 
 ---
 
@@ -626,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 &datatemplatecloudinitconfig.DataTemplateCloudinitConfigConfig {
 	Connection: interface{},
@@ -789,7 +834,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 &datatemplatecloudinitconfig.DataTemplateCloudinitConfigPart {
 	Content: *string,
@@ -865,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.NewDataTemplateCloudinitConfigPartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTemplateCloudinitConfigPartList
 ```
@@ -1008,7 +1053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatecloudinitconfig"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatecloudinitconfig"
 
 datatemplatecloudinitconfig.NewDataTemplateCloudinitConfigPartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataTemplateCloudinitConfigPartOutputReference
 ```

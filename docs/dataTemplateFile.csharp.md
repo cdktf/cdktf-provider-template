@@ -292,6 +292,7 @@ private void ResetVars()
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataTemplateFile resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -352,6 +353,50 @@ DataTemplateFile.IsTerraformDataSource(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Template;
+
+DataTemplateFile.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataTemplateFile resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataTemplateFile to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataTemplateFile that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataTemplateFile to import is found.
 
 ---
 
