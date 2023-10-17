@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/cloudinit_config
 // generated from terraform resource schema
 
@@ -219,6 +214,20 @@ export class CloudinitConfig extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "template_cloudinit_config";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CloudinitConfig resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CloudinitConfig to import
+  * @param importFromId The id of the existing CloudinitConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/cloudinit_config#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CloudinitConfig to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "template_cloudinit_config", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
