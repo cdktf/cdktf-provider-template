@@ -1,7 +1,9 @@
 
-# Terraform CDK template Provider ~> 2.2
+# Terraform CDK template Provider tracks ~> 2.2
 
 This repo builds and publishes the Terraform template Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on template 2.2.0
 
 ## Available Packages
 
