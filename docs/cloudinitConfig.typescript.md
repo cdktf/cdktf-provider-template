@@ -1,7 +1,3 @@
-# `template_cloudinit_config`
-
-Refer to the Terraform Registory for docs: [`template_cloudinit_config`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/cloudinit_config).
-
 # `cloudinitConfig` Submodule <a name="`cloudinitConfig` Submodule" id="@cdktf/provider-template.cloudinitConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `template_dir`
-
-Refer to the Terraform Registory for docs: [`template_dir`](https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/dir).
-
 # `dir` Submodule <a name="`dir` Submodule" id="@cdktf/provider-template.dir"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
