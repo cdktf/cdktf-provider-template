@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/cloudinit_config
 // generated from terraform resource schema
 
@@ -64,6 +59,43 @@ export function dataTemplateCloudinitConfigPartToTerraform(struct?: DataTemplate
     filename: cdktf.stringToTerraform(struct!.filename),
     merge_type: cdktf.stringToTerraform(struct!.mergeType),
   }
+}
+
+
+export function dataTemplateCloudinitConfigPartToHclTerraform(struct?: DataTemplateCloudinitConfigPart | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filename: {
+      value: cdktf.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    merge_type: {
+      value: cdktf.stringToHclTerraform(struct!.mergeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataTemplateCloudinitConfigPartOutputReference extends cdktf.ComplexObject {
@@ -348,5 +380,37 @@ export class DataTemplateCloudinitConfig extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       part: cdktf.listMapper(dataTemplateCloudinitConfigPartToTerraform, true)(this._part.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base64_encode: {
+        value: cdktf.booleanToHclTerraform(this._base64Encode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      gzip: {
+        value: cdktf.booleanToHclTerraform(this._gzip),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      part: {
+        value: cdktf.listMapperHcl(dataTemplateCloudinitConfigPartToHclTerraform, true)(this._part.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataTemplateCloudinitConfigPartList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

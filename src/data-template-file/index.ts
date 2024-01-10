@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/data-sources/file
 // generated from terraform resource schema
 
@@ -178,5 +173,37 @@ export class DataTemplateFile extends cdktf.TerraformDataSource {
       template: cdktf.stringToTerraform(this._template),
       vars: cdktf.hashMapper(cdktf.stringToTerraform)(this._vars),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filename: {
+        value: cdktf.stringToHclTerraform(this._filename),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template: {
+        value: cdktf.stringToHclTerraform(this._template),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vars: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._vars),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatefile"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatefile"
 
 datatemplatefile.NewDataTemplateFile(scope Construct, id *string, config DataTemplateFileConfig) DataTemplateFile
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-template.dataTemplateFile.DataTemplateFile.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.toMetadata"></a>
 
@@ -295,7 +304,7 @@ func ResetVars()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatefile"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatefile"
 
 datatemplatefile.DataTemplateFile_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatefile"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatefile"
 
 datatemplatefile.DataTemplateFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datatemplatefile.DataTemplateFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatefile"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatefile"
 
 datatemplatefile.DataTemplateFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ datatemplatefile.DataTemplateFile_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatefile"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatefile"
 
 datatemplatefile.DataTemplateFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -661,7 +670,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.dataTemplateFile.DataTemplateFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/datatemplatefile"
+import "github.com/cdktf/cdktf-provider-template-go/template/datatemplatefile"
 
 &datatemplatefile.DataTemplateFileConfig {
 	Connection: interface{},
