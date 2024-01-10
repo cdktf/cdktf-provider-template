@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.provider.TemplateProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/provider"
+import "github.com/cdktf/cdktf-provider-template-go/template/v10/provider"
 
 provider.NewTemplateProvider(scope Construct, id *string, config TemplateProviderConfig) TemplateProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-template.provider.TemplateProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-template.provider.TemplateProvider.resetAlias">ResetAlias</a></code> | *No description.* |
@@ -110,6 +111,12 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-template.provider.TemplateProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-template.provider.TemplateProvider.toMetadata"></a>
 
 ```go
@@ -144,7 +151,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-template.provider.TemplateProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/provider"
+import "github.com/cdktf/cdktf-provider-template-go/template/v10/provider"
 
 provider.TemplateProvider_IsConstruct(x interface{}) *bool
 ```
@@ -176,7 +183,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-template.provider.TemplateProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/provider"
+import "github.com/cdktf/cdktf-provider-template-go/template/v10/provider"
 
 provider.TemplateProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -190,7 +197,7 @@ provider.TemplateProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-template.provider.TemplateProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/provider"
+import "github.com/cdktf/cdktf-provider-template-go/template/v10/provider"
 
 provider.TemplateProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -204,7 +211,7 @@ provider.TemplateProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-template.provider.TemplateProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/provider"
+import "github.com/cdktf/cdktf-provider-template-go/template/v10/provider"
 
 provider.TemplateProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -389,7 +396,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.provider.TemplateProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v9/provider"
+import "github.com/cdktf/cdktf-provider-template-go/template/v10/provider"
 
 &provider.TemplateProviderConfig {
 	Alias: *string,
