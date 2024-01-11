@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-template.file.File.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v10/file"
+import "github.com/cdktf/cdktf-provider-template-go/template/file"
 
 file.NewFile(scope Construct, id *string, config FileConfig) File
 ```
@@ -406,7 +406,7 @@ func ResetVars()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-template.file.File.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v10/file"
+import "github.com/cdktf/cdktf-provider-template-go/template/file"
 
 file.File_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-template.file.File.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v10/file"
+import "github.com/cdktf/cdktf-provider-template-go/template/file"
 
 file.File_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ file.File_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-template.file.File.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v10/file"
+import "github.com/cdktf/cdktf-provider-template-go/template/file"
 
 file.File_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ file.File_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-template.file.File.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v10/file"
+import "github.com/cdktf/cdktf-provider-template-go/template/file"
 
 file.File_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-template.file.FileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-template-go/template/v10/file"
+import "github.com/cdktf/cdktf-provider-template-go/template/file"
 
 &file.FileConfig {
 	Connection: interface{},
